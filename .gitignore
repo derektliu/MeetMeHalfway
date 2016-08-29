@@ -16,6 +16,7 @@ Icon
 .Trashes
 client/lib
 compiled/
+node_modules/
 
 # Floobits
 .floo
