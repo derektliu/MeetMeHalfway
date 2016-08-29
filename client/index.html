@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang='en' ng-app='MeetMeHalfwayApp'>
+  
+  <head>
+    <meta charset='utf-8'>
+    <title>Meet Me Halfway</title>
+    <meta name='description' content='Meet Me Halfway'>
+    <meta name='author' content='Derek Liu'>
+    <link rel='stylesheet' href='styles/styles.css'>
+    <!-- Library -->
+    <script src='lib/angular/angular.js'></script>
+    <!-- Angular Modules -->
+    <script src='app/app.js'></script>
+    <script src='app/locations/locations.js'></script>
+    <script src='app/results/results.js'></script>
+    <script src='app/services/services.js'></script>
+  </head>
+
+  <body>
+    <h1> Meet Me Halfway </h1>
+    <h2>Location</h2>
+    <div ng-controller='LocationsController'>
+      <form novalidate class= 'location-form'>
+        <div class='input'>User: <input name='user' ng-model='locations.user'></div>
+        <div class='input'>Friend: <input name='friend' ng-model='locations.friend'></div>
+        <div class='input button'><input type='submit' value='get' ng-click='getLocations()'></div>
+        <div class='input button'><input type='submit' value='send' ng-click='sendFavorites()'></div>
+      </form>
+      <div>User: {{ locations.user }}</div>
+      <div>Friend: {{ locations.friend }}</div>
+    </div>
+    <div ng-controller='ResultsController'>
+      <h2>Results</h2>
+    </div>
+  </body>
+</html>
