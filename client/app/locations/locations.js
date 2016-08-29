@@ -14,6 +14,9 @@ angular.module('MeetMeHalfwayApp.locations', [])
         $scope.locations.user, $scope.locations.friend);
 
       Requests.sendFavorites($scope.locations.user, $scope.locations.friend);
+      
+      $scope.locations.user = '';
+      $scope.locations.friend = '';
     };
 
   });

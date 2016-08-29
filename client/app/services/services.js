@@ -1,9 +1,3 @@
-var keys = {
-  consumerKey: 'NI_PZFnm4j5gpP0PSja_1g',
-  consumerSecret: '  Ne3fBUIO5REb3EFhSMJwIg5tLkU',
-  token: 'RqEhZV4SakLGwl0DRYo3vAmMXeI3Bsav',
-  tokenSecret: 'uYhm4b8k1WR9W5oPvfxbxWpzz_U',
-};
 
 var url = '127.0.0.1:1337';
 
