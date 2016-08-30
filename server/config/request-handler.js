@@ -9,8 +9,8 @@ exports.findHalfway = function(req, res) {
   var user = req.body.data.user;
   var friend = req.body.data.friend;
 
-  user = 'San Francisco';
-  friend = 'Los Angeles';
+  // user = 'Arcadia, CA';
+  // friend = 'Pasadena, CA';
 
   utility.requestGoogleMaps(user, function(userLoc, err) {
     if (err) { throw err; }
