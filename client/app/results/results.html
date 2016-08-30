@@ -1,9 +1,24 @@
 <div ng-controller='ResultsController' ng-init='displayResults()'>
   <h2>Results</h2>
   <div class='input button'><input type='submit' value='Results' ng-click='displayResults()'></div>
-  <ul>
-    <li ng-repeat="result in results">
-    <b>{{result.name}}</b> at {{result.location.address[0]}}, {{result.location.city}}
-    </li>
-  </ul>
+  <div class='info' ng-repeat="result in results">
+
+    <a class='name' href={{result.url}}>
+    <img class='profile' src={{result.image_url}}></a>
+    <a class='name' href={{result.url}}><b>{{result.name}}</b></a>
+    </a>
+    <div class='location'>{{result.location.address[0]}}, {{result.location.city}}</div>
+    <div class='phone'>Phone: {{result.display_phone}}</div>
+    <div class='review'>
+      <div><img src={{result.rating_img_url}}></div>
+      <div>{{result.rating}} Stars from {{result.review_count}} Reviews</div>
+    </div>
+    <div></div>
+    </br>
+    
+<!--     <span></span>
+    <span></span>
+    <span></span>
+    <span></span> -->
+  </div>
 </div>
