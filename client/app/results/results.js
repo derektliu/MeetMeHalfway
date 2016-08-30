@@ -1,18 +1,12 @@
 angular.module('MeetMeHalfwayApp.results', [])
-  .controller('ResultsController', function($scope, $http) {
+  .controller('ResultsController', function($scope, Requests) {
     $scope.results = [];
 
     $scope.displayResults = function() {
-      console.log('CLIENT: inside getRequests');
-      $http.get('/api/results')
+      console.log('CLIENT: inside displayResults');
 
-        .then(function(response) {
-          console.log('response', response.data);
-          $scope.results = response.data.businesses;
-          console.log('CLIENT: successful GET');
-
-        }, function(error) {
-          console.log('CLIENT: error', error);
-        });
+      Requests.getResults(function(data) {
+        $scope.results = data[0].results;
+      });
     };
   });

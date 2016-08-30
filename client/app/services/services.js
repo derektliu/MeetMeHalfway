@@ -17,12 +17,12 @@ angular.module('MeetMeHalfWayApp.services', [])
       });
   };
 
-  var getResults = function() {
+  var getResults = function(callback) {
     console.log('CLIENT: inside getRequests');
     $http.get('/api/results')
       .then(function(response) {
         console.log('CLIENT: successful GET');
-        return response.data.businesses;
+        callback(response.data);
       }, function(error) {
         console.log('CLIENT: error', error);
       });

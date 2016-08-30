@@ -55,6 +55,7 @@ exports.requestGoogleMaps = function(location, callback) {
     });
     response.on('end', function() {
       body = JSON.parse(body).results[0].geometry.location;
+      // body = JSON.parse(body);
       callback(body, null);
     });
     response.on('error', function(err) {
