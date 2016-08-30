@@ -1,0 +1,9 @@
+<div ng-controller='ResultsController'>
+  <h2>Results</h2>
+  <div class='input button'><input type='submit' value='Results' ng-click='displayResults()'></div>
+  <ul>
+    <li ng-repeat="result in results">
+    {{result.name}} at {{result.location.address[0]}}, {{result.location.city}}
+    </li>
+  </ul>
+</div>
