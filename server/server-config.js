@@ -10,11 +10,11 @@ app.use(bodyParser.json());
 
 app.use(express.static('client'));
 
-app.get('/hello', handler.helloWorld);
+// app.get('/hello', handler.helloWorld);
 
-// app.get('/yelp', handler.requestYelp);
-app.get('/yelp', handler.getFavorites);
-app.post('/yelp', handler.saveFavorite);
+app.get('/api/yelp', handler.requestYelp);
+app.get('/api/results', handler.getResults);
+// app.post('/api/favorites', handler.saveFavorite);
 
 
 module.exports = app;

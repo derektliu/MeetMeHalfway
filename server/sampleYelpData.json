@@ -1,0 +1,1031 @@
+{
+    "region": {
+        "span": {
+            "latitude_delta": 0.04673735000000079,
+            "longitude_delta": 0.04198249000000942
+        },
+        "center": {
+            "latitude": 37.76832975,
+            "longitude": -122.42186695000001
+        }
+    },
+    "total": 50793,
+    "businesses": [
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/the-temporarium-coffee-and-tea-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 91,
+            "name": "The Temporarium Coffee & Tea",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/the-temporarium-coffee-and-tea-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "phone": "4155470616",
+            "snippet_text": "A cup of espresso with amazing interiors will make you fall in love and you will be returning again and again. The coffee blends are delight to your senses....",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Toe3RYpB4gy50YQPhRYzoQ/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/tVEUEh5vbbGO4rYEHQKCbA/ms.jpg",
+            "display_phone": "+1-415-547-0616",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "the-temporarium-coffee-and-tea-san-francisco",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Ames St & Guerrero St",
+                "city": "San Francisco",
+                "display_address": [
+                    "3414 22nd St",
+                    "Mission",
+                    "San Francisco, CA 94110"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Mission"
+                ],
+                "postal_code": "94110",
+                "country_code": "US",
+                "address": [
+                    "3414 22nd St"
+                ],
+                "coordinate": {
+                    "latitude": 37.7552289543874,
+                    "longitude": -122.423587217172
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/tadu-ethiopian-kitchen-san-francisco-3?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 342,
+            "name": "Tadu Ethiopian Kitchen",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/tadu-ethiopian-kitchen-san-francisco-3?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Ethiopian",
+                    "ethiopian"
+                ]
+            ],
+            "menu_date_updated": 1463688477,
+            "phone": "4154096649",
+            "snippet_text": "This place is small and cozy, and the staff pretty friendly. We ordered a veggie combo (recommended if you're unsure what you'd like - you get smaller...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/EapkmG5rpJuy7u8tu01GYA/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/8P8cCod11YXQp4JBDcEuvQ/ms.jpg",
+            "display_phone": "+1-415-409-6649",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "eat24",
+            "id": "tadu-ethiopian-kitchen-san-francisco-3",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Jones St & Leavenworth St",
+                "city": "San Francisco",
+                "display_address": [
+                    "484 Ellis St",
+                    "Tenderloin",
+                    "San Francisco, CA 94102"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Tenderloin"
+                ],
+                "postal_code": "94102",
+                "country_code": "US",
+                "address": [
+                    "484 Ellis St"
+                ],
+                "coordinate": {
+                    "latitude": 37.7847934,
+                    "longitude": -122.4141884
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/shizen-vegan-sushi-bar-and-izakaya-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 532,
+            "name": "Shizen Vegan Sushi Bar & Izakaya",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/shizen-vegan-sushi-bar-and-izakaya-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Sushi Bars",
+                    "sushi"
+                ],
+                [
+                    "Vegan",
+                    "vegan"
+                ],
+                [
+                    "Izakaya",
+                    "izakaya"
+                ]
+            ],
+            "menu_date_updated": 1447932443,
+            "phone": "4156785767",
+            "snippet_text": "so much variety\n\nloved trying all the intriguing rolls\n\nThe Philadelphia roll with creamy tofu tasted like it had dairy cream cheese\n\nMy favorite was the...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/-mnGwsFDYXYsAuhbh8u6Hg/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/u1ZtDaujkziAKFsnxZDm9w/ms.jpg",
+            "display_phone": "+1-415-678-5767",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "shizen-vegan-sushi-bar-and-izakaya-san-francisco",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Julian Ave & Stevenson St",
+                "city": "San Francisco",
+                "display_address": [
+                    "370 14th St",
+                    "Mission",
+                    "San Francisco, CA 94103"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Mission"
+                ],
+                "postal_code": "94103",
+                "country_code": "US",
+                "address": [
+                    "370 14th St"
+                ],
+                "coordinate": {
+                    "latitude": 37.7683096,
+                    "longitude": -122.4216669
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/hookers-sweet-treats-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 254,
+            "name": "Hooker's Sweet Treats",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/hookers-sweet-treats-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Chocolatiers & Shops",
+                    "chocolate"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "phone": "4154414628",
+            "snippet_text": "There were two customers in front of me. I was acknowledged and it didn't take long before I got to order a French press and their famous bread pudding. The...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/izW5V7ghPnQSf6HCIxvS4Q/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/3Atm3DkS2etSGoVV2EOnIA/ms.jpg",
+            "display_phone": "+1-415-441-4628",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "hookers-sweet-treats-san-francisco",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Ellis St & Ofarrell St",
+                "city": "San Francisco",
+                "display_address": [
+                    "442 Hyde St",
+                    "Tenderloin",
+                    "San Francisco, CA 94109"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Tenderloin"
+                ],
+                "postal_code": "94109",
+                "country_code": "US",
+                "address": [
+                    "442 Hyde St"
+                ],
+                "coordinate": {
+                    "latitude": 37.7852285,
+                    "longitude": -122.4160527
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/city-hall-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 325,
+            "name": "City Hall",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/city-hall-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Landmarks & Historical Buildings",
+                    "landmarks"
+                ],
+                [
+                    "Venues & Event Spaces",
+                    "venues"
+                ]
+            ],
+            "phone": "4157012311",
+            "snippet_text": "I got married here\nIt was a very simple process \nWe came in a few days before to fill out some forms and we got married on a Thursday \nThe ceremony was less...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/CU28mlJGJjQ_kcMBbS9TIA/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/ZKxnssy9pibncOEK2UIEpw/ms.jpg",
+            "display_phone": "+1-415-701-2311",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "city-hall-san-francisco",
+            "is_closed": false,
+            "location": {
+                "city": "San Francisco",
+                "display_address": [
+                    "1 Dr Carlton B Goodlett Pl",
+                    "Civic Center",
+                    "San Francisco, CA 94102"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Civic Center"
+                ],
+                "postal_code": "94102",
+                "country_code": "US",
+                "address": [
+                    "1 Dr Carlton B Goodlett Pl"
+                ],
+                "coordinate": {
+                    "latitude": 37.7793900915108,
+                    "longitude": -122.418615818024
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/bowld-acai-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 299,
+            "name": "Bowl'D Acai",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/bowld-acai-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Food Trucks",
+                    "foodtrucks"
+                ],
+                [
+                    "Juice Bars & Smoothies",
+                    "juicebars"
+                ],
+                [
+                    "Vegetarian",
+                    "vegetarian"
+                ]
+            ],
+            "phone": "4157707000",
+            "snippet_text": "My review probably won't be helpful to most people since I've never had their acai. I come here  specifically for the POKE BOWL.\n\nIt's my favorite poke I've...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/F9bS3DMJaRvJ6ZKl8e-63A/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/tngbwB0Z583akev_uUmVIA/ms.jpg",
+            "display_phone": "+1-415-770-7000",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "bowld-acai-san-francisco-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Jessie St",
+                "city": "San Francisco",
+                "display_address": [
+                    "14 Mint Plaza",
+                    "Union Square",
+                    "San Francisco, CA 94103"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Union Square",
+                    "SoMa"
+                ],
+                "postal_code": "94103",
+                "country_code": "US",
+                "address": [
+                    "14 Mint Plaza"
+                ],
+                "coordinate": {
+                    "latitude": 37.7827576494972,
+                    "longitude": -122.407829469394
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/philz-coffee-san-francisco-4?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 1454,
+            "name": "Philz Coffee",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/philz-coffee-san-francisco-4?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "menu_date_updated": 1442036183,
+            "phone": "4152927660",
+            "snippet_text": "Phil coffee never let me down... Love this place... I bought my out of town gf here and she loves it too!\n\nThere's two separate areas - one place is where...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/5FNv-ZL4UayQsk2CyWxpoA/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/-Yiaa2daWlAtgd-Kja35Ag/ms.jpg",
+            "display_phone": "+1-415-292-7660",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "philz-coffee-san-francisco-4",
+            "is_closed": false,
+            "location": {
+                "city": "San Francisco",
+                "display_address": [
+                    "748 Van Ness Ave",
+                    "San Francisco, CA 94102"
+                ],
+                "geo_accuracy": 9.5,
+                "postal_code": "94102",
+                "country_code": "US",
+                "address": [
+                    "748 Van Ness Ave"
+                ],
+                "coordinate": {
+                    "latitude": 37.782383,
+                    "longitude": -122.420526
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/wildcraft-espresso-bar-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 59,
+            "name": "Wildcraft Espresso Bar",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/wildcraft-espresso-bar-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "phone": "4154005036",
+            "snippet_text": "One of the BEST coffee spots in the city! I used to live in New York and Wildcraft reminds me of NYC's perfect, amazing, artisan espresso spots. Also, the...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/76rvSVTl729Ygmw9NLGDJQ/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/1bns6SwBPYXzwv9e9hc7gw/ms.jpg",
+            "display_phone": "+1-415-400-5036",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "wildcraft-espresso-bar-san-francisco-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Sanchez St & 16th St",
+                "city": "San Francisco",
+                "display_address": [
+                    "2299 Market St",
+                    "Unit A",
+                    "Castro",
+                    "San Francisco, CA 94114"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Castro"
+                ],
+                "postal_code": "94114",
+                "country_code": "US",
+                "address": [
+                    "2299 Market St",
+                    "Unit A"
+                ],
+                "coordinate": {
+                    "latitude": 37.7640511,
+                    "longitude": -122.4327369
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/papa-november-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 78,
+            "name": "Papa November",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/papa-november-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "snippet_text": "Cute coffee truck in a neighborhood desperately in need of some fancy coffee. I am on mostly decaf these days and would love a decaf latte, but they have...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/W_xxOnU2PMDhZHk3CdMkjQ/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/exhpjmjcHUrcsv7Tk8ecfg/ms.jpg",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "papa-november-san-francisco",
+            "is_closed": false,
+            "location": {
+                "city": "San Francisco",
+                "display_address": [
+                    "15th & Kansas SE Corner",
+                    "SoMa",
+                    "San Francisco, CA 94103"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "SoMa"
+                ],
+                "postal_code": "94103",
+                "country_code": "US",
+                "address": [
+                    "15th & Kansas SE Corner"
+                ],
+                "coordinate": {
+                    "latitude": 37.7672036024795,
+                    "longitude": -122.403616905212
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/b-patisserie-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 1395,
+            "name": "b. Patisserie",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/b-patisserie-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Bakeries",
+                    "bakeries"
+                ],
+                [
+                    "Cafes",
+                    "cafes"
+                ]
+            ],
+            "menu_date_updated": 1442113714,
+            "phone": "4154401700",
+            "snippet_text": "AMAZING. Best bakery in the city by far! Parking is a pain around there but B is worth it. It's such a cute shop with some outdoor, indoor seating. If you...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/JSpohxMdt431tYAe2sZhQQ/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/Ua_zXdMgAvY-D3BTeYZzNw/ms.jpg",
+            "display_phone": "+1-415-440-1700",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "b-patisserie-san-francisco-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Divisadero St & Broderick St",
+                "city": "San Francisco",
+                "display_address": [
+                    "2821 California St",
+                    "Pacific Heights",
+                    "San Francisco, CA 94115"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Pacific Heights",
+                    "Lower Pacific Heights"
+                ],
+                "postal_code": "94115",
+                "country_code": "US",
+                "address": [
+                    "2821 California St"
+                ],
+                "coordinate": {
+                    "latitude": 37.7879217,
+                    "longitude": -122.4409499
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/little-heaven-deli-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 144,
+            "name": "Little Heaven Deli",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/little-heaven-deli-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Creperies",
+                    "creperies"
+                ],
+                [
+                    "Delis",
+                    "delis"
+                ],
+                [
+                    "Bubble Tea",
+                    "bubbletea"
+                ]
+            ],
+            "menu_date_updated": 1451468231,
+            "phone": "4158241293",
+            "snippet_text": "What a fantastic place. I ordered takeout via Eat24 earlier today (8/14) at around 2.\n\nAmbiance: Whoever said the kitchen is small and narrow, like an...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/XiukHSADw-ePjNBE9k0Z1A/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/pS4NPrKWA-mcQIhPn3_X6w/ms.jpg",
+            "display_phone": "+1-415-824-1293",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "little-heaven-deli-san-francisco",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "19th St & 20th St",
+                "city": "San Francisco",
+                "display_address": [
+                    "2348 Mission St",
+                    "Mission",
+                    "San Francisco, CA 94110"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Mission"
+                ],
+                "postal_code": "94110",
+                "country_code": "US",
+                "address": [
+                    "2348 Mission St"
+                ],
+                "coordinate": {
+                    "latitude": 37.75948,
+                    "longitude": -122.41943
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/the-flying-falafel-san-francisco-3?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 546,
+            "name": "The Flying Falafel",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/the-flying-falafel-san-francisco-3?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Falafel",
+                    "falafel"
+                ],
+                [
+                    "Vegan",
+                    "vegan"
+                ]
+            ],
+            "menu_date_updated": 1466296449,
+            "phone": "4159641003",
+            "snippet_text": "TL;DR - You can't go wrong with this pita pocket.\n\nDelicious falafel. LOTS of greens and veggies. Super tasty sauce.\n\nIf I lived closer, this would...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/O4zKAcpg4qFUQj5Kd5fjpQ/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/f_y58YIeB2kE0RXKhVYcVw/ms.jpg",
+            "display_phone": "+1-415-964-1003",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "eat24",
+            "id": "the-flying-falafel-san-francisco-3",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Golden Gate Ave & Taylor St",
+                "city": "San Francisco",
+                "display_address": [
+                    "1051 Market St",
+                    "SoMa",
+                    "San Francisco, CA 94103"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "SoMa"
+                ],
+                "postal_code": "94103",
+                "country_code": "US",
+                "address": [
+                    "1051 Market St"
+                ],
+                "coordinate": {
+                    "latitude": 37.7812488,
+                    "longitude": -122.411304
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/dolores-park-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 1297,
+            "name": "Dolores Park",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/dolores-park-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Parks",
+                    "parks"
+                ]
+            ],
+            "snippet_text": "I moved to San Francisco in The Mission district a couple months back and Dolores Park was one of the first places my roommate brought me. A giant park...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/TcCqeOSM_SqZw_9TIbMCPg/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/wUMBjguSQMfBo3tVe7mkXw/ms.jpg",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "dolores-park-san-francisco",
+            "is_closed": false,
+            "location": {
+                "city": "San Francisco",
+                "display_address": [
+                    "Dolores St",
+                    "Castro",
+                    "San Francisco, CA 94114"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Castro"
+                ],
+                "postal_code": "94114",
+                "country_code": "US",
+                "address": [
+                    "Dolores St"
+                ],
+                "coordinate": {
+                    "latitude": 37.759764,
+                    "longitude": -122.427052
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/liholiho-yacht-club-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 958,
+            "name": "Liholiho Yacht Club",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/liholiho-yacht-club-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Asian Fusion",
+                    "asianfusion"
+                ],
+                [
+                    "American (New)",
+                    "newamerican"
+                ],
+                [
+                    "Seafood",
+                    "seafood"
+                ]
+            ],
+            "menu_date_updated": 1442228646,
+            "phone": "4154405446",
+            "snippet_text": "I've heard a lot about Liholiho Yacht Club.  I finally had a chance to give it a try last night.  All I can say is \"Wow.\"  I understand what all the hype is...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/uUkGwA2rrwd24RUjIzWmsw/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/DGiQD45nsbWG2Vtg_PFC4Q/ms.jpg",
+            "display_phone": "+1-415-440-5446",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "liholiho-yacht-club-san-francisco-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Jones St & Leavenworth St",
+                "city": "San Francisco",
+                "display_address": [
+                    "871 Sutter St",
+                    "Lower Nob Hill",
+                    "San Francisco, CA 94109"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Lower Nob Hill"
+                ],
+                "postal_code": "94109",
+                "country_code": "US",
+                "address": [
+                    "871 Sutter St"
+                ],
+                "coordinate": {
+                    "latitude": 37.7883678084094,
+                    "longitude": -122.414625026286
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/coffeeshop-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 245,
+            "name": "CoffeeShop",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/coffeeshop-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "phone": "4153683802",
+            "snippet_text": "The best experience I've ever had ordering coffee \n\nBtw they ice your coffee with ice coffee, fuck yeah",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/FA9aPHSc0y7UtVCDVOmuPg/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/MMsyjGjdl6RywCS2tD6CJA/ms.jpg",
+            "display_phone": "+1-415-368-3802",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "coffeeshop-san-francisco",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Capp St & Precita Ave",
+                "city": "San Francisco",
+                "display_address": [
+                    "3139 Mission St",
+                    "Bernal Heights",
+                    "San Francisco, CA 94110"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Bernal Heights",
+                    "Mission"
+                ],
+                "postal_code": "94110",
+                "country_code": "US",
+                "address": [
+                    "3139 Mission St"
+                ],
+                "coordinate": {
+                    "latitude": 37.7470855,
+                    "longitude": -122.4187899
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/zo11-coffee-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 37,
+            "name": "Zo11 Coffee",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/zo11-coffee-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ],
+                [
+                    "Sandwiches",
+                    "sandwiches"
+                ],
+                [
+                    "Coffee Roasteries",
+                    "coffeeroasteries"
+                ]
+            ],
+            "menu_date_updated": 1471594914,
+            "phone": "4158729880",
+            "snippet_text": "One of my favorite neighborhood coffee shops in the city; no investors not a corporation/franchise or start up backed by MyFaceUberGoogleHooli just good,...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/2ghfhDunUUEmCLTIChMseg/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/ICgPkzXChdkEp-bwQtj0xA/ms.jpg",
+            "display_phone": "+1-415-872-9880",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "menu_provider": "eat24",
+            "id": "zo11-coffee-san-francisco",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Mcallister St & Golden Gate Ave",
+                "city": "San Francisco",
+                "display_address": [
+                    "1035 Fillmore St",
+                    "Alamo Square",
+                    "San Francisco, CA 94115"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Alamo Square"
+                ],
+                "postal_code": "94115",
+                "country_code": "US",
+                "address": [
+                    "1035 Fillmore St"
+                ],
+                "coordinate": {
+                    "latitude": 37.7788831,
+                    "longitude": -122.4319671
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/song-tea-and-ceramics-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 41,
+            "name": "Song Tea & Ceramics",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/song-tea-and-ceramics-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "phone": "4158852118",
+            "snippet_text": "I've been waiting a couple of years to visit. I was waiting on a friend of mine who is a tea connoisseur, but we never quite made it, so I popped in...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/jswkxMdPBVvOf06aYTF7kw/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/yy4IyNbTu50IxAGXw71BBw/ms.jpg",
+            "display_phone": "+1-415-885-2118",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "song-tea-and-ceramics-san-francisco-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Steiner St & Pierce St",
+                "city": "San Francisco",
+                "display_address": [
+                    "2120 Sutter St",
+                    "Lower Pacific Heights",
+                    "San Francisco, CA 94115"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Lower Pacific Heights"
+                ],
+                "postal_code": "94115",
+                "country_code": "US",
+                "address": [
+                    "2120 Sutter St"
+                ],
+                "coordinate": {
+                    "latitude": 37.7859464,
+                    "longitude": -122.4353888
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/blue-bottle-coffee-san-francisco-8?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 1682,
+            "name": "Blue Bottle Coffee",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/blue-bottle-coffee-san-francisco-8?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "menu_date_updated": 1441946003,
+            "phone": "5106533394",
+            "snippet_text": "Another one of my favorite stops in Hayes Valley, where I first discovered the greatness of this coffee!\n\nIt might be hard to find at first though, since it...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/0quAAk1_A42TYCNen-t7Tw/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/YTB8C8IdTuaNut7Q6nHm5Q/ms.jpg",
+            "display_phone": "+1-510-653-3394",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "blue-bottle-coffee-san-francisco-8",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Octavia St & Gough St",
+                "city": "San Francisco",
+                "display_address": [
+                    "315 Linden St",
+                    "Hayes Valley",
+                    "San Francisco, CA 94102"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Hayes Valley"
+                ],
+                "postal_code": "94102",
+                "country_code": "US",
+                "address": [
+                    "315 Linden St"
+                ],
+                "coordinate": {
+                    "latitude": 37.77638,
+                    "longitude": -122.423211
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/t-we-tea-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 82,
+            "name": "T-We Tea",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/t-we-tea-san-francisco?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Tea Rooms",
+                    "tea"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "phone": "4155002097",
+            "snippet_text": "This store is the fuggin' cutest! I'm not even a tea person, and I walked out with two cans, Bad Bromance and Sippin' Pretty. I love a well-rounded brand...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/sdtJq7aMdlpaU8Sgwl8Xuw/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/H99zhupGFX3NVR-03P8SqQ/ms.jpg",
+            "display_phone": "+1-415-500-2097",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "t-we-tea-san-francisco",
+            "is_closed": false,
+            "location": {
+                "city": "San Francisco",
+                "display_address": [
+                    "Crocker Galleria",
+                    "50 Post St Level 1",
+                    "Financial District",
+                    "San Francisco, CA 94104"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Financial District"
+                ],
+                "postal_code": "94104",
+                "country_code": "US",
+                "address": [
+                    "Crocker Galleria",
+                    "50 Post St Level 1"
+                ],
+                "coordinate": {
+                    "latitude": 37.789574,
+                    "longitude": -122.402784
+                },
+                "state_code": "CA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/sweet-aha-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 37,
+            "name": "Sweet Aha!",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/sweet-aha-san-francisco-2?adjust_creative=NI_PZFnm4j5gpP0PSja_1g&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NI_PZFnm4j5gpP0PSja_1g",
+            "categories": [
+                [
+                    "Vegan",
+                    "vegan"
+                ],
+                [
+                    "Bakeries",
+                    "bakeries"
+                ],
+                [
+                    "Cupcakes",
+                    "cupcakes"
+                ]
+            ],
+            "phone": "4158392138",
+            "snippet_text": "We ordered 48 cupcakes for my son's first birthday. They were so well received! People loved them and the one comment that we got over and over was \"I can't...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/xJmuxbAp66GMmgsFSVmtiw/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/189f2ca1fe8c/assets/img/default_avatars/user_medium_square.png",
+            "display_phone": "+1-415-839-2138",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "sweet-aha-san-francisco-2",
+            "is_closed": false,
+            "location": {
+                "city": "San Francisco",
+                "display_address": [
+                    "SoMa",
+                    "San Francisco, CA 94103"
+                ],
+                "geo_accuracy": 5.0,
+                "neighborhoods": [
+                    "SoMa"
+                ],
+                "postal_code": "94103",
+                "country_code": "US",
+                "address": [],
+                "coordinate": {
+                    "latitude": 37.7731018066406,
+                    "longitude": -122.411277770996
+                },
+                "state_code": "CA"
+            }
+        }
+    ]
+}

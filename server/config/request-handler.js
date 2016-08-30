@@ -1,4 +1,4 @@
-var storage = [{ user: 'Derek', friend: 'Sam'}];
+var storage = require('../sampleYelpData.json');
 
 var keys = {
   consumerKey: 'NI_PZFnm4j5gpP0PSja_1g',
@@ -7,9 +7,9 @@ var keys = {
   tokenSecret: 'uYhm4b8k1WR9W5oPvfxbxWpzz_U',
 };
 
-exports.helloWorld = function(req, res) {
-  res.send('Testing 1 2 3');
-};
+// exports.helloWorld = function(req, res) {
+//   res.send('Testing 1 2 3');
+// };
 
 exports.requestYelp = function(req, res) {
   var obj = {name: 'Yelp'};
@@ -17,12 +17,12 @@ exports.requestYelp = function(req, res) {
   res.send(JSON.stringify(obj));
 };
 
-exports.getFavorites = function(req, res) {
+exports.getResults = function(req, res) {
   res.send(JSON.stringify(storage));
 };
 
-exports.saveFavorite = function(req, res) {
-  console.log('request body', req.body.data);
-  storage.push(req.body.data);
-  res.send('SERVER: successful POST');
-};
+// exports.saveFavorite = function(req, res) {
+//   console.log('request body', req.body.data);
+//   storage.push(req.body.data);
+//   res.send('SERVER: successful POST');
+// };
