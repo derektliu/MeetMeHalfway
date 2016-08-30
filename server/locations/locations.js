@@ -1,8 +1,8 @@
 var mongoose = require('mongoose');
 
 var locationsSchema = mongoose.Schema({
-  userLoc: String,
-  friendLoc: String,
+  user: String,
+  friend: String,
   halfwayLocLat: Number,
   halfwayLocLng: Number,
   results: Array

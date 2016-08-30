@@ -26,8 +26,8 @@ exports.findHalfway = function(req, res) {
       utility.requestYelp(halfwayLoc, function(data) {
 
         var newSearch = new Locations({
-          userLoc: user,
-          friendLoc: friend,
+          user: user,
+          friend: friend,
           halfwayLocLat: halfwayLoc.lat,
           halfwayLocLng: halfwayLoc.lng,
           results: data.businesses

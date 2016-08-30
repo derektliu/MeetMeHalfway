@@ -10,12 +10,8 @@ app.use(bodyParser.json());
 
 app.use(express.static('client'));
 
-// app.get('/hello', handler.helloWorld);
-
-// app.post('/api/yelp', handler.requestYelp);
 app.post('/api/halfway', handler.findHalfway);
 app.get('/api/results', handler.getResults);
-// app.get('/api/results', handler.findHalfway);
 // app.post('/api/favorites', handler.saveFavorite);
 
 

@@ -26,7 +26,6 @@ exports.requestYelp = function(location, callback) {
 
   yelp.search({ term: 'food', ll: stringLoc })
   .then(function (data) {
-    // console.log('success from yelp', data);
     callback(data);
   })
   .catch(function (err) {
