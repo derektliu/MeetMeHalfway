@@ -1,7 +1,7 @@
 var url = '127.0.0.1:1337';
 
 angular.module('MeetMeHalfWayApp.services', [])
-.factory('Requests', function($http) {
+.factory('Requests', function($http, $location) {
 
   var requestYelp = function(user, friend) {
     console.log('CLIENT: inside requestYelp');
@@ -13,7 +13,8 @@ angular.module('MeetMeHalfWayApp.services', [])
     };
     $http.post('/api/yelp', config)
       .then(function(response) {
-        console.log('CLIENT: successful POST to /yelp', response.data);
+        console.log('CLIENT: successful POST to /yelp');
+        $location.path('/results');
       }, function(error) {
         console.log('CLIENT: error during POST from /yelp', error);
       });

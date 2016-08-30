@@ -7,7 +7,7 @@ angular.module('MeetMeHalfwayApp.results', [])
       $http.get('/api/results')
         .then(function(response) {
           $scope.results = response.data.businesses;
-          console.log('CLIENT: successful GET', $scope.results);
+          console.log('CLIENT: successful GET');
         }, function(error) {
           console.log('CLIENT: error', error);
         });

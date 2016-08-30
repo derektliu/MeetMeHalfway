@@ -18,6 +18,5 @@ angular.module('MeetMeHalfwayApp', [
         templateUrl: 'app/results/results.html',
         controller: 'ResultsController',
       });
-
   }
 ]);
