@@ -6,10 +6,7 @@ angular.module('MeetMeHalfwayApp.locations', [])
       console.log('inside locations/getlocations',
         $scope.locations.user, $scope.locations.friend);
 
-      Requests.requestYelp($scope.locations.user, $scope.locations.friend);
-
-      $scope.locations.user = '';
-      $scope.locations.friend = '';
+      Requests.requestHalfway($scope.locations);
     };
 
     // $scope.sendFavorites = function() {

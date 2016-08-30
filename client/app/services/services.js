@@ -3,15 +3,12 @@ var url = '127.0.0.1:1337';
 angular.module('MeetMeHalfWayApp.services', [])
 .factory('Requests', function($http, $location) {
 
-  var requestYelp = function(user, friend) {
+  var requestHalfway = function(locations) {
     console.log('CLIENT: inside requestYelp');
-    var config = {
-      data: {
-        user: user,
-        friend: friend
-      }
-    };
-    $http.post('/api/yelp', config)
+    var config = {};
+    config.data = locations;
+    
+    $http.post('/api/halfway', config)
       .then(function(response) {
         console.log('CLIENT: successful POST to /yelp');
         $location.path('/results');
@@ -24,7 +21,7 @@ angular.module('MeetMeHalfWayApp.services', [])
     console.log('CLIENT: inside getRequests');
     $http.get('/api/results')
       .then(function(response) {
-        console.log('CLIENT: successful GET', response.data.businesses);
+        console.log('CLIENT: successful GET');
         return response.data.businesses;
       }, function(error) {
         console.log('CLIENT: error', error);
@@ -48,7 +45,7 @@ angular.module('MeetMeHalfWayApp.services', [])
   // };
 
   return {
-    requestYelp: requestYelp,
+    requestHalfway: requestHalfway,
     getResults: getResults
     // sendFavorites: sendFavorites
   };

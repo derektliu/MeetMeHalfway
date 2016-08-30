@@ -5,9 +5,12 @@ angular.module('MeetMeHalfwayApp.results', [])
     $scope.displayResults = function() {
       console.log('CLIENT: inside getRequests');
       $http.get('/api/results')
+
         .then(function(response) {
+          // console.log('response', response.data);
           $scope.results = response.data.businesses;
           console.log('CLIENT: successful GET');
+
         }, function(error) {
           console.log('CLIENT: error', error);
         });
