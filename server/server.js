@@ -1,4 +1,4 @@
-var app = require('./server-config.js');
+var app = require('./config/server-config.js');
 
 var port = 1337;
 

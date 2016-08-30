@@ -1,5 +1,5 @@
 var express = require('express');
-var handler = require('./config/request-handler.js');
+var handler = require('./request-handler.js');
 var bodyParser = require('body-parser');
 
 var app = express();
