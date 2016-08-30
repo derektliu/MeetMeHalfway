@@ -12,7 +12,7 @@ app.use(express.static('client'));
 
 // app.get('/hello', handler.helloWorld);
 
-app.get('/api/yelp', handler.requestYelp);
+app.post('/api/yelp', handler.requestYelp);
 app.get('/api/results', handler.getResults);
 // app.post('/api/favorites', handler.saveFavorite);
 

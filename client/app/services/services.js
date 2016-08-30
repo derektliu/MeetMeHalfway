@@ -19,16 +19,16 @@ angular.module('MeetMeHalfWayApp.services', [])
       });
   };
 
-  // var getResults = function() {
-  //   console.log('CLIENT: inside getRequests');
-  //   $http.get('/api/results')
-  //     .then(function(response) {
-  //       console.log('CLIENT: successful GET', response.data.businesses);
-  //       return response.data.businesses;
-  //     }, function(error) {
-  //       console.log('CLIENT: error', error);
-  //     });
-  // };
+  var getResults = function() {
+    console.log('CLIENT: inside getRequests');
+    $http.get('/api/results')
+      .then(function(response) {
+        console.log('CLIENT: successful GET', response.data.businesses);
+        return response.data.businesses;
+      }, function(error) {
+        console.log('CLIENT: error', error);
+      });
+  };
 
   // var sendFavorites = function(user, friend) {
   //   console.log('CLIENT: inside sendFavorites');
