@@ -1,5 +1,11 @@
 <div ng-controller='ResultsController' ng-init='displayResults()'>
   <h2>Yelp Results for Halfway Between {{current.user}} & {{current.friend}}</h2>
+
+  <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable='false' options='options'>
+    <ui-gmap-markers models="markers" coords="'self'" icon="'icon'" >
+        </ui-gmap-markers>
+  </ui-gmap-google-map>
+
   <div class="dropdown">
     <button class="dropbtn">Previous Searches</button>
     <div class="dropdown-content">
