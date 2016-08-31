@@ -6,13 +6,17 @@
     <title>Meet Me Halfway</title>
     <meta name='description' content='Meet Me Halfway'>
     <meta name='author' content='Derek Liu'>
+    <!-- Styles -->
+    <link rel='stylesheet' href='lib/bootstrap/dist/css/bootstrap.css'>
     <link rel='stylesheet' href='styles/styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
     <!-- Library -->
     <script src='lib/angular/angular.js'></script>
     <script src='lib/lodash/lodash.js'></script>
     <script src='lib/angular-simple-logger/dist/angular-simple-logger.js'></script>
     <script src='lib/angular-google-maps/dist/angular-google-maps.js'></script>
+    <script type = "text/javascript" src = "lib/jquery/dist/jquery.js"></script>
     
     <!-- Angular Modules -->
     <script src="lib/angular-route/angular-route.js"></script>
@@ -24,8 +28,8 @@
 
   <body>
     <h1> Meet Me Halfway </h1>
-    <a href='#/locations'>Find Location</a>
-    <a href='#/results'>See Results</a>
+    <a class="btn btn-primary" href='#/locations'>Find Location</a>
+    <a class="btn btn-primary" href='#/results'>See Results</a>
 
     <div ng-view></div>
   </body>

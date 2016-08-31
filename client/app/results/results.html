@@ -1,5 +1,5 @@
 <div ng-controller='ResultsController' ng-init='displayResults()'>
-  <h3>Yelp Results for Halfway Between {{current.user}} & {{current.friend}}</h3>
+  <h3>Halfway Between<br>{{current.user}}<br>&<br>{{current.friend}}</h3>
 
   <ui-gmap-google-map center='map.center' zoom='map.zoom' draggable='false' options='options'>
     <ui-gmap-markers models="markers" coords="'self'" icon="'icon'" >
@@ -12,7 +12,7 @@
       <a ng-repeat="search in searches" ng-click="changeResults($index)">{{search.user}} & {{search.friend}}</a>
     </div>
   </div>
-  </br>
+  <br>
   <!-- <div class='input button'><input type='submit' value='Results' ng-click='displayResults()'></div> -->
   <div class='info' ng-repeat="result in current.results">
     <a class='name' href={{result.url}}>

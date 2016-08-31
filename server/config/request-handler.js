@@ -57,10 +57,10 @@ exports.findHalfway = function(req, res) {
 exports.getResults = function(req, res) {
   Locations.find({}).exec(function (err, search) {
     if (err) {
-      console.log('Error retrieving from db!');
+      console.log('Error retrieving from db');
       throw err;
     }
-    console.log('Success retrieving from db!', search);
+    console.log('Success retrieving from db');
     res.send(JSON.stringify(search));
   });
 };

@@ -3,7 +3,8 @@ html, body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Helvetica';
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgb(240, 234, 214);
 }
 img.profile {
   float: left;
@@ -19,6 +20,8 @@ img.profile {
     height: 300px;
     /*width: 500px;*/
 }
+
+
 
 /* Dropdown Button */
 .dropbtn {
