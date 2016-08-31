@@ -12,23 +12,20 @@
       <a ng-repeat="search in searches" ng-click="changeResults($index)">{{search.user}} & {{search.friend}}</a>
     </div>
   </div>
+  
   <br>
-  <!-- <div class='input button'><input type='submit' value='Results' ng-click='displayResults()'></div> -->
-  <div class='info' ng-repeat="result in current.results">
-    <a class='name' href={{result.url}}>
-    <img class='profile' src={{result.image_url}}></a>
-    <a class='name' href={{result.url}}><b>{{result.name}}</b></a>
-  </a>
-  <div class='location'>{{result.location.address[0]}}, {{result.location.city}}</div>
-  <div class='phone'>Phone: {{result.display_phone}}</div>
-  <div class='review'>
-    <div><img class='stars' src={{result.rating_img_url}}></div>
-    <div>{{result.rating}} Stars from {{result.review_count}} Reviews</div>
+
+  <div class='results'>
+    <div class='info' ng-repeat="result in current.results">
+      <a class='name' href={{result.url}}>
+      <img class='profile' src={{result.image_url}}></a>
+      <a class='name' href={{result.url}}><b>{{result.name}}</b></a>
+    <div class='location'>{{result.location.address[0]}}, {{result.location.city}}</div>
+    <div class='phone'>Phone: {{result.display_phone}}</div>
+    <div class='review'>
+      <div><img class='stars' src={{result.rating_img_url}}></div>
+      <div>{{result.rating}} Stars from {{result.review_count}} Reviews</div>
+    </div>
   </div>
-  <div></div>
-  <!--     <span></span>
-  <span></span>
-  <span></span>
-  <span></span> -->
 </div>
 </div>
