@@ -3,9 +3,6 @@ angular.module('MeetMeHalfwayApp.locations', [])
     $scope.locations = {};
 
     $scope.getLocations = function() {
-      console.log('inside locations/getlocations',
-        $scope.locations.user, $scope.locations.friend);
-
       Requests.requestHalfway($scope.locations);
     };
 

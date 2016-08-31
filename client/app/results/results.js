@@ -15,7 +15,6 @@ angular.module('MeetMeHalfwayApp.results', ['uiGmapgoogle-maps'])
         longitude: -122.4194
       },
       zoom: 13,
-      bound: {}
     };
 
     $scope.options = {
@@ -32,7 +31,6 @@ angular.module('MeetMeHalfwayApp.results', ['uiGmapgoogle-maps'])
         title: elem.name,
         id: index
       };
-
 
       $scope.markers.push(ret);
     };
@@ -53,6 +51,7 @@ angular.module('MeetMeHalfwayApp.results', ['uiGmapgoogle-maps'])
     };
 
     $scope.changeResults = function(index) {
+      
       $scope.current = $scope.searches[index];
       $scope.map.center.latitude = $scope.current.halfwayLocLat;
       $scope.map.center.longitude = $scope.current.halfwayLocLng;

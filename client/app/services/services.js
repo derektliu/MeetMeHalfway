@@ -4,13 +4,13 @@ angular.module('MeetMeHalfWayApp.services', [])
 .factory('Requests', function($http, $location) {
 
   var requestHalfway = function(locations) {
-    console.log('CLIENT: inside requestYelp');
+    // console.log('CLIENT: inside requestYelp');
     var config = {};
     config.data = locations;
     
     $http.post('/api/halfway', config)
       .then(function(response) {
-        console.log('CLIENT: successful POST to /yelp');
+        // console.log('CLIENT: successful POST to /yelp');
         $location.path('/results');
       }, function(error) {
         console.log('CLIENT: error during POST from /yelp', error);
@@ -18,10 +18,10 @@ angular.module('MeetMeHalfWayApp.services', [])
   };
 
   var getResults = function(callback) {
-    console.log('CLIENT: inside getRequests');
+    // console.log('CLIENT: inside getRequests');
     $http.get('/api/results')
       .then(function(response) {
-        console.log('CLIENT: successful GET');
+        // console.log('CLIENT: successful GET');
         callback(response.data);
       }, function(error) {
         console.log('CLIENT: error', error);

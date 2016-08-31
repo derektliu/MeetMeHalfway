@@ -2,14 +2,22 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  text-align: center;
+  font-family: 'Helvetica';
 }
-.profile{
+img.profile {
   float: left;
 }
-
+.info{
+    display: inline-block;
+    min-width: 366px;
+    min-height: 105px;
+    border: 2px;
+    padding: 5px;
+}
 .angular-google-map-container {
     height: 300px;
-    width: 500px;
+    /*width: 500px;*/
 }
 
 /* Dropdown Button */
