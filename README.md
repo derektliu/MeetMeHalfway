@@ -1,45 +1,101 @@
 # MeetMeHalfway
 
-## Project Overview
+Find the perfect meeting spot between multiple locations. Enter addresses for 2 or more people, and MeetMeHalfway calculates the central point and shows nearby restaurants on a map. Filter by price and rating, then vote on your favorites.
 
-MeetMeHalfway is a web application designed to help users find a convenient meeting point between two locations. It leverages the Yelp API to provide suggestions for places to meet.
+## Tech Stack
 
-### Project Structure
+- **Framework:** Next.js 14 (App Router, TypeScript)
+- **Database:** SQLite (local dev) / PostgreSQL (production) via Prisma
+- **Maps:** Leaflet + OpenStreetMap
+- **Venue Search:** Google Places Nearby Search
+- **Geocoding:** Google Maps Geocoding API
+- **Autocomplete:** Google Places Autocomplete
+- **Styling:** Tailwind CSS
 
-- **Server-side**: Located in the `server` directory.
+## Features
 
-  - **Entry Point**: `server.js` starts the server on port 1337.
-  - **Configuration**: `server/config/server-config.js` sets up the Express server, middleware, and routes.
-  - **Routes**:
-    - `POST /api/halfway`: Calls `handler.findHalfway`.
-    - `GET /api/results`: Calls `handler.getResults`.
-  - **Dependencies**: Uses Express, Body-Parser, Mongoose, and Yelp API.
-
-- **Client-side**: Located in the `client` directory.
-
-  - **Frameworks**: Uses AngularJS, Bootstrap, and jQuery.
-  - **Entry Point**: `index.html` in the `client` directory.
-
-- **Testing**: Uses Mocha for testing, as specified in the `package.json`.
+- Multi-stop support (2+ people)
+- Address autocomplete
+- Filter venues by price, rating, and open status
+- Vote on venues with shareable links
+- Search history
 
 ## Getting Started
 
-1. **Install Dependencies**:
+### Prerequisites
 
-   - Run `npm install` to install Node.js dependencies.
-   - Run `yarn install` to install front-end dependencies specified in `package.json`.
+- Node.js 18+
+- Google Cloud project with **Geocoding API**, **Places API**, and **Maps JavaScript API** enabled
 
-2. **Run the Server**:
+No database install needed for local dev — SQLite is used automatically.
 
-   - Execute `node server/server.js` to start the server on port 1337.
+### Setup
 
-3. **Access the Application**:
-   - Open a browser and navigate to `http://localhost:1337` to access the client-side application.
+1. Clone and install:
+   ```bash
+   git clone https://github.com/derektliu/MeetMeHalfway.git
+   cd MeetMeHalfway
+   npm install
+   ```
 
-## Suggested Improvements
+2. Create `.env.local` with your Google Maps API key:
+   ```
+   GOOGLE_MAPS_API_KEY=your_key_here
+   NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_key_here
+   DATABASE_URL="file:./dev.db"
+   ```
 
-1. **Documentation**: The `README.md` is currently empty. Adding setup instructions, usage, and contribution guidelines would be beneficial.
-2. **Error Handling**: Ensure robust error handling in server routes and client-side code.
-3. **Testing**: Expand test coverage to include more scenarios and edge cases.
-4. **Security**: Review and implement security best practices, especially if handling sensitive data.
-5. **Code Quality**: Consider using a linter for consistent code style and quality.
+3. Run migrations:
+   ```bash
+   npm run db:migrate
+   ```
+
+4. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000)
+
+## Database
+
+The database provider is auto-detected from `DATABASE_URL`:
+
+| `DATABASE_URL` | Provider | Use case |
+|---|---|---|
+| `file:./dev.db` | SQLite | Local development |
+| `postgresql://...` | PostgreSQL | Production / Vercel |
+
+This is handled by `scripts/set-db-provider.mjs`, which runs automatically on `npm run dev`, `npm run build`, and `npm install`.
+
+## Deploy to Vercel
+
+1. Push your code to GitHub
+2. Import the repo in [Vercel](https://vercel.com)
+3. Add a Postgres database ([Vercel Postgres](https://vercel.com/docs/storage/vercel-postgres) or [Neon](https://neon.tech))
+4. Set environment variables:
+   - `GOOGLE_MAPS_API_KEY` — your Google Maps API key
+   - `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` — same key (used for client-side autocomplete)
+   - `DATABASE_URL` — PostgreSQL connection string (provided by Vercel/Neon)
+5. Set the build command to: `prisma migrate deploy && next build`
+6. Deploy
+
+## Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start dev server (auto-detects DB, generates Prisma client) |
+| `npm run build` | Production build |
+| `npm run lint` | Run ESLint |
+| `npm run db:migrate` | Create and apply Prisma migrations |
+| `npm run db:push` | Push schema changes without migrations |
+
+## How It Works
+
+1. Enter addresses for you and your friends (2 or more)
+2. The app geocodes all addresses and calculates the geographic centroid
+3. Google Places API finds nearby restaurants around the midpoint
+4. Results are displayed on a Leaflet map with venue cards
+5. Filter results by price, rating, or open status
+6. Set your name and vote on your favorite venues
+7. Share the URL with friends so they can vote too
