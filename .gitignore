@@ -1,25 +1,29 @@
-.DS_Store
-.AppleDouble
-.LSOverride
-azure.err
-iisnode.yml
-
-# Icon must ends with two \r.
-Icon
-
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-client/lib
-compiled/
+# dependencies
 node_modules/
 
-# Floobits
-.floo
-.floobit
-.floo
-.flooignore
+# next.js
+.next/
+out/
+
+# production
+build/
+
+# env files
+.env
+.env.local
+.env*.local
+
+# prisma
+prisma/dev.db
+prisma/dev.db-journal
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

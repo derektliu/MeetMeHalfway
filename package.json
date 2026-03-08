@@ -1,28 +1,39 @@
 {
   "name": "meetmehalfway",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server/server.js",
+  "version": "2.0.0",
+  "private": true,
   "scripts": {
-    "test": "mocha test/test.js"
+    "predev": "node scripts/set-db-provider.mjs && prisma generate",
+    "dev": "next dev",
+    "prebuild": "node scripts/set-db-provider.mjs && prisma generate",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "node scripts/set-db-provider.mjs && prisma generate",
+    "db:migrate": "node scripts/set-db-provider.mjs && prisma migrate dev",
+    "db:push": "node scripts/set-db-provider.mjs && prisma db push"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/derektliu/MeetMeHalfway.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/derektliu/MeetMeHalfway/issues"
-  },
-  "homepage": "https://github.com/derektliu/MeetMeHalfway#readme",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "mongoose": "^4.5.10",
-    "yelp": "^1.0.1"
+    "@prisma/client": "^5.20.0",
+    "@react-google-maps/api": "^2.20.8",
+    "leaflet": "^1.9.4",
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-leaflet": "^4.2.1"
   },
   "devDependencies": {
-    "mocha": "^3.0.2"
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "dotenv": "^17.3.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "postcss": "^8.4.38",
+    "prisma": "^5.20.0",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5"
   }
 }

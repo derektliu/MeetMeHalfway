@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url       = env("DATABASE_URL")
+}
+
+model Search {
+  id           String        @id @default(cuid())
+  midpointLat  Float
+  midpointLng  Float
+  venueType    String        @default("restaurant")
+  midpointMode String        @default("geographic")
+  travelMode   String?
+  createdAt    DateTime      @default(now())
+  participants Participant[]
+  venues       Venue[]
+  viewers      Viewer[]
+}
+
+model Participant {
+  id            String @id @default(cuid())
+  address       String
+  searchId      String
+  search        Search @relation(fields: [searchId], references: [id], onDelete: Cascade)
+  lat           Float?
+  lng           Float?
+  travelTimeSec Int?
+}
+
+model Venue {
+  id               String   @id @default(cuid())
+  searchId         String
+  search           Search   @relation(fields: [searchId], references: [id], onDelete: Cascade)
+  placeId          String
+  name             String
+  address          String
+  lat              Float
+  lng              Float
+  rating           Float?
+  userRatingsTotal Int?
+  priceLevel       Int?
+  photoUrl         String?
+  types            String   @default("[]")
+  openNow          Boolean?
+  votes            Vote[]
+}
+
+model Vote {
+  id        String   @id @default(cuid())
+  venueId   String
+  venue     Venue    @relation(fields: [venueId], references: [id], onDelete: Cascade)
+  voterName String
+  createdAt DateTime @default(now())
+}
+
+model Viewer {
+  id        String   @id @default(cuid())
+  searchId  String
+  search    Search   @relation(fields: [searchId], references: [id], onDelete: Cascade)
+  name      String
+  lastSeen  DateTime @default(now())
+
+  @@unique([searchId, name])
+}
