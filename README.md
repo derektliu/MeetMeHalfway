@@ -1,6 +1,6 @@
 # MeetMeHalfway
 
-Find the perfect meeting spot between multiple locations. Enter addresses for 2 or more people, and MeetMeHalfway calculates the central point and shows nearby restaurants on a map. Filter by price and rating, then vote on your favorites.
+Find the perfect meeting spot between multiple locations. Enter addresses for 2 or more people, and MeetMeHalfway calculates the central point and shows nearby venues on a map. Search for restaurants, cafes, bars, parks, and more. Optionally equalize travel times, then vote on your favorites in real time.
 
 ## Tech Stack
 
@@ -9,23 +9,27 @@ Find the perfect meeting spot between multiple locations. Enter addresses for 2 
 - **Maps:** Leaflet + OpenStreetMap
 - **Venue Search:** Google Places Nearby Search
 - **Geocoding:** Google Maps Geocoding API
+- **Travel Times:** Google Distance Matrix API
 - **Autocomplete:** Google Places Autocomplete
 - **Styling:** Tailwind CSS
 
 ## Features
 
-- Multi-stop support (2+ people)
-- Address autocomplete
-- Filter venues by price, rating, and open status
-- Vote on venues with shareable links
-- Search history
+- **Multi-stop support** — 2 or more people
+- **Address autocomplete** — powered by Google Places
+- **Beyond restaurants** — search for cafes, bars, parks, libraries, or gyms
+- **Travel-aware midpoint** — optionally equalize travel time instead of using geographic center, with driving/transit/walking/biking modes
+- **Filter venues** — by price, rating, and open status
+- **Vote on venues** — with shareable links
+- **Real-time collaboration** — live vote updates and viewer presence when multiple people view the same results
+- **Search history** — browse past searches with venue type labels
 
 ## Getting Started
 
 ### Prerequisites
 
 - Node.js 18+
-- Google Cloud project with **Geocoding API**, **Places API**, and **Maps JavaScript API** enabled
+- Google Cloud project with **Geocoding API**, **Places API**, **Maps JavaScript API**, and **Distance Matrix API** enabled
 
 No database install needed for local dev — SQLite is used automatically.
 
@@ -93,9 +97,11 @@ This is handled by `scripts/set-db-provider.mjs`, which runs automatically on `n
 ## How It Works
 
 1. Enter addresses for you and your friends (2 or more)
-2. The app geocodes all addresses and calculates the geographic centroid
-3. Google Places API finds nearby restaurants around the midpoint
-4. Results are displayed on a Leaflet map with venue cards
-5. Filter results by price, rating, or open status
-6. Set your name and vote on your favorite venues
-7. Share the URL with friends so they can vote too
+2. Pick a venue type (restaurants, cafes, bars, parks, libraries, or gyms)
+3. Choose midpoint mode: **Geographic** (simple centroid) or **Travel-Time** (equalizes travel duration via Distance Matrix API, with driving/transit/walking/biking options)
+4. The app geocodes all addresses and computes the midpoint
+5. Google Places API finds nearby venues around the midpoint
+6. Results are displayed on a Leaflet map with venue cards
+7. Filter results by price, rating, or open status
+8. Set your name and vote on your favorite venues
+9. Share the URL with friends — they'll see live vote updates and who else is viewing
