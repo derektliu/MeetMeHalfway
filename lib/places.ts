@@ -2,12 +2,13 @@ import { Coordinates, PlaceResult } from "@/types";
 
 export async function searchPlaces(
   location: Coordinates,
-  radius = 1500
+  radius = 1500,
+  type = "restaurant"
 ): Promise<PlaceResult[]> {
   const params = new URLSearchParams({
     location: `${location.lat},${location.lng}`,
     radius: radius.toString(),
-    type: "restaurant",
+    type,
     key: process.env.GOOGLE_MAPS_API_KEY!,
   });
 

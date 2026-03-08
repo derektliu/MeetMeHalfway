@@ -22,6 +22,13 @@ export async function GET(
     addresses: search.participants.map((p) => p.address),
     midpointLat: search.midpointLat,
     midpointLng: search.midpointLng,
+    venueType: search.venueType,
+    midpointMode: search.midpointMode,
+    travelMode: search.travelMode,
+    travelTimes: search.participants.map((p) => ({
+      address: p.address,
+      travelTimeSec: p.travelTimeSec,
+    })),
     createdAt: search.createdAt,
     venues: search.venues.map((v) => ({
       ...v,

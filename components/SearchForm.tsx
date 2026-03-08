@@ -4,12 +4,18 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useLoadScript } from "@react-google-maps/api";
 import AddressInput from "./AddressInput";
+import { VenueType, VENUE_TYPE_LABELS, MidpointMode, TravelMode } from "@/types";
 
 const libraries: ("places")[] = ["places"];
+
+const VENUE_TYPES = Object.entries(VENUE_TYPE_LABELS) as [VenueType, string][];
 
 export default function SearchForm() {
   const router = useRouter();
   const [addresses, setAddresses] = useState(["", ""]);
+  const [venueType, setVenueType] = useState<VenueType>("restaurant");
+  const [midpointMode, setMidpointMode] = useState<MidpointMode>("geographic");
+  const [travelMode, setTravelMode] = useState<TravelMode>("driving");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -40,7 +46,12 @@ export default function SearchForm() {
       const res = await fetch("/api/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ addresses }),
+        body: JSON.stringify({
+          addresses,
+          venueType,
+          midpointMode,
+          ...(midpointMode === "travel" && { travelMode }),
+        }),
       });
 
       const data = await res.json();
@@ -108,6 +119,83 @@ export default function SearchForm() {
       >
         + Add another person
       </button>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          What are you looking for?
+        </label>
+        <div className="flex flex-wrap gap-2">
+          {VENUE_TYPES.map(([type, label]) => (
+            <button
+              key={type}
+              type="button"
+              onClick={() => setVenueType(type)}
+              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                venueType === type
+                  ? "bg-amber-500 text-white"
+                  : "bg-white text-gray-600 hover:bg-gray-100 shadow-sm"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          Midpoint calculation
+        </label>
+        <div className="flex gap-2">
+          <button
+            type="button"
+            onClick={() => setMidpointMode("geographic")}
+            className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+              midpointMode === "geographic"
+                ? "bg-amber-500 text-white"
+                : "bg-white text-gray-600 hover:bg-gray-100 shadow-sm"
+            }`}
+          >
+            Geographic
+          </button>
+          <button
+            type="button"
+            onClick={() => setMidpointMode("travel")}
+            className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+              midpointMode === "travel"
+                ? "bg-amber-500 text-white"
+                : "bg-white text-gray-600 hover:bg-gray-100 shadow-sm"
+            }`}
+          >
+            Travel-Time
+          </button>
+        </div>
+        {midpointMode === "travel" && (
+          <div className="flex gap-2 mt-2">
+            {(
+              [
+                ["driving", "Drive"],
+                ["transit", "Transit"],
+                ["walking", "Walk"],
+                ["bicycling", "Bike"],
+              ] as [TravelMode, string][]
+            ).map(([mode, label]) => (
+              <button
+                key={mode}
+                type="button"
+                onClick={() => setTravelMode(mode)}
+                className={`flex-1 px-2 py-1.5 rounded-md text-xs font-medium transition-colors ${
+                  travelMode === mode
+                    ? "bg-gray-700 text-white"
+                    : "bg-white text-gray-500 hover:bg-gray-100 shadow-sm"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
 
       {error && <p className="text-red-600 text-sm">{error}</p>}
 

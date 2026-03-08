@@ -15,6 +15,7 @@ export default async function HistoryPage() {
   const summaries = searches.map((s) => ({
     id: s.id,
     addresses: s.participants.map((p) => p.address),
+    venueType: s.venueType as import("@/types").VenueType,
     createdAt: s.createdAt.toISOString(),
     venueCount: s._count.venues,
   }));

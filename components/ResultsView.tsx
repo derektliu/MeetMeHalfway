@@ -4,7 +4,9 @@ import { useState, useMemo, useEffect } from "react";
 import dynamic from "next/dynamic";
 import FilterControls, { Filters } from "./FilterControls";
 import VenueList from "./VenueList";
-import { VenueData } from "@/types";
+import ViewerPresence from "./ViewerPresence";
+import { useRealtimeUpdates } from "@/hooks/useRealtimeUpdates";
+import { VenueData, VenueType, VENUE_TYPE_LABELS, MidpointMode, TravelMode, TravelTimeInfo } from "@/types";
 
 const MapView = dynamic(() => import("@/components/MapView"), { ssr: false });
 
@@ -12,9 +14,36 @@ interface ResultsViewProps {
   midpoint: { lat: number; lng: number };
   venues: VenueData[];
   searchId: string;
+  venueType?: VenueType;
+  midpointMode?: MidpointMode;
+  travelMode?: TravelMode | null;
+  travelTimes?: TravelTimeInfo[];
 }
 
-export default function ResultsView({ midpoint, venues, searchId }: ResultsViewProps) {
+function formatDuration(seconds: number): string {
+  const mins = Math.round(seconds / 60);
+  if (mins < 60) return `~${mins} min`;
+  const hrs = Math.floor(mins / 60);
+  const rem = mins % 60;
+  return `~${hrs}h ${rem}m`;
+}
+
+const TRAVEL_MODE_LABELS: Record<string, string> = {
+  driving: "Driving",
+  transit: "Transit",
+  walking: "Walking",
+  bicycling: "Bicycling",
+};
+
+export default function ResultsView({
+  midpoint,
+  venues,
+  searchId,
+  venueType = "restaurant",
+  midpointMode = "geographic",
+  travelMode,
+  travelTimes = [],
+}: ResultsViewProps) {
   const [filters, setFilters] = useState<Filters>({
     priceLevel: null,
     openNow: false,
@@ -31,6 +60,11 @@ export default function ResultsView({ midpoint, venues, searchId }: ResultsViewP
       setNameSet(true);
     }
   }, []);
+
+  const { votes: liveVotes, viewers } = useRealtimeUpdates(
+    searchId,
+    nameSet ? voterName : ""
+  );
 
   function saveName() {
     if (voterName.trim()) {
@@ -71,11 +105,36 @@ export default function ResultsView({ midpoint, venues, searchId }: ResultsViewP
           {copied ? "Copied!" : "Copy Link"}
         </button>
       </div>
+      {midpointMode === "travel" && travelTimes.length > 0 && (
+        <div className="bg-white rounded-lg shadow-sm p-3">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              Travel-Time Midpoint
+            </span>
+            {travelMode && (
+              <span className="px-2 py-0.5 bg-gray-100 rounded-full text-xs text-gray-600">
+                {TRAVEL_MODE_LABELS[travelMode] || travelMode}
+              </span>
+            )}
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {travelTimes.map((t, i) => (
+              <div key={i} className="text-sm text-gray-700">
+                <span className="font-medium">{t.address.split(",")[0]}</span>
+                {": "}
+                {t.travelTimeSec != null
+                  ? formatDuration(t.travelTimeSec)
+                  : "N/A"}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       <MapView midpoint={midpoint} venues={filtered} />
       <div>
         <div className="flex items-center justify-between mb-3">
           <h3 className="text-lg font-semibold text-gray-700">
-            Nearby Restaurants
+            Nearby {VENUE_TYPE_LABELS[venueType]}
           </h3>
           <span className="text-sm text-gray-400">
             {filtered.length} of {venues.length}
@@ -115,8 +174,15 @@ export default function ResultsView({ midpoint, venues, searchId }: ResultsViewP
           )}
         </div>
 
-        <VenueList venues={filtered} voterName={nameSet ? voterName : ""} />
+        <VenueList
+          venues={filtered}
+          voterName={nameSet ? voterName : ""}
+          liveVotes={liveVotes}
+        />
       </div>
+      {nameSet && viewers.length > 0 && (
+        <ViewerPresence viewers={viewers} currentUser={voterName} />
+      )}
     </>
   );
 }

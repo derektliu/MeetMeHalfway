@@ -16,6 +16,7 @@ export async function GET() {
     searches.map((s) => ({
       id: s.id,
       addresses: s.participants.map((p) => p.address),
+      venueType: s.venueType,
       createdAt: s.createdAt,
       venueCount: s._count.venues,
     }))

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SearchSummary } from "@/types";
+import { SearchSummary, VENUE_TYPE_LABELS } from "@/types";
 
 export default function SearchHistory({ searches }: { searches: SearchSummary[] }) {
   if (searches.length === 0) {
@@ -24,7 +24,7 @@ export default function SearchHistory({ searches }: { searches: SearchSummary[] 
                 {search.addresses.join(" \u2194 ")}
               </p>
               <p className="text-sm text-gray-500 mt-1">
-                {search.venueCount} venues found
+                {search.venueCount} {VENUE_TYPE_LABELS[search.venueType] || "venues"} found
               </p>
             </div>
             <time className="text-xs text-gray-400">
